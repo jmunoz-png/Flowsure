@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flowsure</title>
+  <link rel="icon" type="image/x-icon" href="./assets/Flowsure-favicon.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="loader"
+    style="position: fixed; inset: 0; background: #0b1020; display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 9999; color: white;">
+    <div class="spinner"></div>
+    <p style="margin-top: 20px;">Cargando experiencia…</p>
+  </div>
+  <nav class="navbar navbar-expand-xl">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#inicio">
+        <img src="./assets/Logo-nav.svg" alt="Logo Flowsure" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#caracteristicas">Características</a></li>
+          <li class="nav-item"><a class="nav-link" href="#areasTrabajo">Áreas de trabajo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#casosExito">Casos de éxito</a></li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary" role="button">Hablar con un especialista</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Canvas de fondo fijo -->
+  <canvas id="scrollCanvas"></canvas>
+  <section class="canvas-zone" id="inicio">
+    <!-- Sección 1 -->
+    <div class="section section-1">
+      <div class="section-content">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="title animate">
+              <h1>Una IA al servicio de las personas</h1>
+              <div class="text-animated">
+                <span>
+                  FLOWSURE <br>
+                  OBSERVA <br>
+                  ENTIENDE <br>
+                  Y DECIDE
+                </span>
+              </div>
+            </div>
+            <div class="s1-text content animate">
+              <p>Flowsure, nuestro modelo de IA para automatización de flujos, diseñado para que tu equipo se enfoque en
+                crear&nbsp;valor</p>
+              <a href="#contacto" class="btn btn-primary" role="button">Hablar con un especialista</a>
+              <p class="after-btn">Respondemos en menos de 24 horas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección 2 -->
+    <div class="section section-2" id="caracteristicas">
+      <div class="section-content s2-text">
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <div class="title-1 animate">
+              <h1>Flowsure observa</h1>
+              <h4>Visión inteligente para tus procesos</h4>
+            </div>
+            <div class="content animate">
+              <p>Entender el mundo visual no debería ser complejo ni inaccesible. Cada imagen, documento, dato o video
+                contiene información valiosa que hoy se pierde entre tareas manuales.</p>
+              <p>Por eso creamos Flowsure Observa: para ayudar, no para reemplazar.</p>
+              <p>Una inteligencia que colabora contigo para hacer más simple lo difícil.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección 3 -->
+    <div class="section section-3">
+      <div class="section-content s3-text">
+        <div class="title animate">
+          <h1>Flowsure entiende</h1>
+          <h4>Analiza, compara y comprende lo que tus sistemas no pueden.</h4>
+        </div>
+        <div class="row content animate">
+          <div class="col-md-6">
+            <p class="info-left">La información solo tiene valor cuando puede entenderse. Los sistemas tradicionales
+              leen datos, pero no los comprenden ni los conectan.</p>
+          </div>
+          <div class="col-md-6">
+            <p class="info-right">Nuestra IA entiende el contexto detrás de cada imagen, video, documento y dato,
+              para ayudarte a tomar decisiones más seguras y rápidas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección 4 -->
+    <div class="section section-4">
+      <div class="section-content s4-text">
+        <div class="title animate">
+          <h1>Flowsure decide</h1>
+          <h4>Convierte la información en decisiones precisas.</h4>
+        </div>
+        <div class="row content animate">
+          <div class="col-md 6">
+            <p class="info-left">Las mejores decisiones no nacen del cansancio ni la intuición. Surgen de datos claros,
+              contexto real y tecnología que colabora contigo.</p>
+          </div>
+          <div class="col-md-6">
+            <p class="info-right">Flowsure no solo observa y entiende: te ayuda a decidir con precisión, en menos tiempo
+              y con mayor confianza. Decidir bien es decidir con respaldo y ese respaldo hoy es inteligencia
+              diseñada para ti.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección fotos -->
+  <section class="no-bg images" id="areasTrabajo">
+    <div class="pre-anim">
+      <h1 class="word-anim">Flowsure mejora donde tú lo necesitas</h1>
+    </div>
+    <div class="images-text">
+      <h1>Flowsure mejora donde tú lo necesitas</h1>
+      <p>Creemos que la automatización debe ser simple y accesible. Por eso creamos una API que observa, entiende y
+        decide, ayudando a las personas a librarse de tareas repetitivas.</p>
+      <a href="#contacto" class="btn btn-primary" role="button">Hablar con un especialista</a>
+      <p class="after-btn">Respondemos en menos de 24 horas.</p>
+    </div>
+    <div class="images-container">
+      <div class="image-wrapper">
+        <img src="./assets/foto-1.webp" alt="1" loading="lazy">
+        <!-- <picture>
+          <source srcset="./assets/foto-1.webp" type="image/webp">
+          <img src="./assets/foto-1.jpg" alt="Foto 1" loading="lazy" decoding="async">
+        </picture> -->
+      </div>
+      <div class="image-wrapper">
+        <img src="./assets/foto-2.webp" alt="2" loading="lazy">
+        <!-- <picture>
+          <source srcset="./assets/foto-2.webp" type="image/webp">
+          <img src="./assets/foto-2.jpg" alt="Foto 2" loading="lazy" decoding="async">
+        </picture> -->
+      </div>
+      <div class="image-wrapper">
+        <img src="./assets/foto-3.webp" alt="3" loading="lazy">
+        <!-- <picture>
+          <source srcset="./assets/foto-3.webp" type="image/webp">
+          <img src="./assets/foto-3.jpg" alt="Foto 3" loading="lazy" decoding="async">
+        </picture> -->
+      </div>
+      <div class="image-wrapper">
+        <img src="./assets/foto-4.webp" alt="4" loading="lazy">
+        <!-- <picture>
+          <source srcset="./assets/foto-4.webp" type="image/webp">
+          <img src="./assets/foto-4.jpg" alt="Foto 4" loading="lazy" decoding="async">
+        </picture> -->
+      </div>
+      <div class="image-wrapper">
+        <img src="./assets/foto-5.webp" alt="5" loading="lazy">
+        <!-- <picture>
+          <source srcset="./assets/foto-5.webp" type="image/webp">
+          <img src="./assets/foto-5.jpg" alt="Foto 5" loading="lazy" decoding="async">
+        </picture> -->
+      </div>
+      <div class="image-wrapper">
+        <img src="./assets/foto-6.webp" alt="6" loading="lazy">
+        <!-- <picture>
+          <source srcset="./assets/foto-6.webp" type="image/webp">
+          <img src="./assets/foto-6.jpg" alt="Foto 6" loading="lazy" decoding="async">
+        </picture> -->
+      </div>
+      <div class="image-wrapper">
+        <img src="./assets/foto-7.webp" alt="7" loading="lazy">
+        <!-- <picture>
+          <source srcset="./assets/foto-6.webp" type="image/webp">
+          <img src="./assets/foto-7.png" alt="Foto 7" loading="lazy" decoding="async">
+        </picture> -->
+      </div>
+      <div class="image-wrapper">
+        <img src="./assets/foto-8.webp" alt="8" loading="lazy">
+        <!-- <picture>
+          <source srcset="./assets/foto-8.webp" type="image/webp">
+          <img src="./assets/foto-8.jpg" alt="Foto 8" loading="lazy" decoding="async">
+        </picture> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Caso de Exito -->
+  <section class="exito" id="casosExito">
+    <div class="card card-1">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+            <h5 class="card-title">Del desafío la solución con Flowsure</h5>
+            <p class="card-text">Más que promesas: impacto en terreno.</p>
+          </div>
+          <div class="col-md-6 position-relative">
+            <div class="card inside-card floating-card lazy-bg animate" data-bg="./assets/foto-4.webp"
+              data-bg-fallback="./assets/foto-4.jpg">
+              <div class="card-body">
+                <!-- <p class="top-text">Con Flowsure aumentamos nuestra eficiencia</p> -->
+                <p class="card-text">Hoy, Flowsure se implementa con una empresa líder en inspecciones del país,
+                  automatizando procesos donde la precisión y velocidad son clave.</p>
+                <p class="card-text">Con Flowsure, están:</p>
+                <ul class="card-text">
+                  <li>Reduciendo tiempos de inspección</li>
+                  <li>Minimizando errores con IA visual</li>
+                  <li>Centralizando decisiones críticas</li>
+                  <li>Liberando tiempo para lo importante</li>
+                </ul>
+                <p class="card-text">Una IA que observa, entiende y decide.</p>
+                <p class="card-text">Sin reemplazar personas, les da un superpoder.</p>
+                <!-- <img src="./assets/Logo-blanco.svg" alt="Logo" style="width: 100px;"> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección testimonios -->
+  <!-- <section class="testimonios" id="testimonios">
+    <div class="card card-out">
+      <div class="card-body">
+        <h5 class="card-title">Los usuarios respaldan nuestra eficiencia</h5>
+        <h6 class="card-subtitle mb-2">IA comprobada por equipos reales.</h6>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card card-testimonio card-floating-anim">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-10 col-10">
+                    <p class="card-text">
+                      “Antes de usar Flowsure, nuestro equipo tardaba horas en revisar fotos y presupuestos de daños. Ahora, con la IA analizando automáticamente las imágenes, obtenemos resultados en minutos y con una precisión que supera cualquier revisión manual. <br>
+                      Gracias a eso, reducimos los tiempos de inspección en un 65% y mejoramos la satisfacción de
+                      nuestros clientes.”
+                    </p>
+                    <p class="card-subtitle mb-2">Carolina Muñoz, Gerenta de Operaciones <br>
+                    RAC inspecciones
+                    </p>
+                  </div>
+                  <div class="col-md-2 col-2">
+                    <img src="./assets/quote.svg" alt="comillas icono" class="icono">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card card-testimonio card-floating-anim">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-10 col-10">
+                    <p class="card-text">
+                      “Antes de usar Flowsure, nuestro equipo tardaba horas en revisar fotos y presupuestos de daños. Ahora, con la IA analizando automáticamente las imágenes, obtenemos resultados en minutos y con una precisión que supera cualquier revisión manual. <br>
+                      Gracias a eso, reducimos los tiempos de inspección en un 65% y mejoramos la satisfacción de
+                      nuestros clientes.”
+                    </p>
+                    <p class="card-subtitle mb-2">Carolina Muñoz, Gerenta de Operaciones <br>
+                    RAC inspecciones
+                    </p>
+                  </div>
+                  <div class="col-md-2 col-2">
+                    <img src="./assets/quote.svg" alt="comillas icono" class="icono">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Sección Contacto -->
+  <section class="contacto lazy-bg" id="contacto" data-bg="./assets/persona.webp"
+    data-bg-fallback="./assets/persona.jpg">
+    <div class="container-fluid">
+      <img src="./assets/Logo-blanco.svg" alt="Logo" class="logo-contacto">
+      <div class="row">
+        <div class="col-md-6 title-container">
+          <h1 class="word-anim-2">Nuestros especialistas te mostrarán cómo Flowsure puede impulsar tu negocio.</h1>
+        </div>
+        <div class="col-md-6 form-container">
+          <div class="card card-formulario card-animate">
+            <div class="card-body">
+              <h5 class="card-title">¿Estás interesado?</h5>
+              <p class="card-text">Quiero conocer más sobre Flowsure</p>
+              <!-- Formulario -->
+              <script data-b24-form="inline/11/fc0azu"
+                data-skip-moving="true">(function (w, d, u) { var s = d.createElement('script'); s.async = true; s.src = u + '?' + (Date.now() / 180000 | 0); var h = d.getElementsByTagName('script')[0]; h.parentNode.insertBefore(s, h); })(window, document, 'https://cdn.bitrix24.es/b33821737/crm/form/loader_11.js');</script>
+            </div>
+          </div>
+        </div>
+        <p class="contact-bottom">Agenda una reunión y descubre su potencial.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Flowsure&reg; es un producto creado y desarrollado por Prosys. <br>
+      &copy; 2025 Prosys. Todos los derechos reservados.</p>
+    <img src="./assets/Logo-footer.svg" alt="logo" class="logo">
+  </footer>
+
+  <!-- Librerías -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <!-- Script principal -->
+  <script src="js/main.js"></script>
+  <script>
+    // Fallback: If the page doesn't load in 1.5 seconds, force remove the loader
+    setTimeout(() => {
+      const loader = document.getElementById('loader');
+      if (loader) {
+        console.warn("⚠️ Inline fallback removing loader");
+        loader.style.transition = "opacity 0.5s ease";
+        loader.style.opacity = "0";
+        setTimeout(() => loader.remove(), 500);
+        document.body.style.overflow = "auto";
+      }
+    }, 1500);
+  </script>
+</body>
+
+</html>
