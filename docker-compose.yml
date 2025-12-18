@@ -11,8 +11,6 @@ services:
     hostname: landing-flowsure
     ports:
       - 127.0.0.1:7005:80
-    env_file:
-      - .env
     environment:
       - TZ=America/Santiago
     labels:
