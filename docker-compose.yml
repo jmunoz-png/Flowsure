@@ -14,6 +14,7 @@ services:
     environment:
       - TZ=America/Santiago
     labels:
+      - traefik.enable=true
       # externo
       - traefik.http.routers.flowsure.rule=Host(`flowsure.dev3.prosys.cl`)
       - traefik.http.routers.flowsure.tls.certresolver=myresolver
