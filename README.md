@@ -40,6 +40,7 @@ git status              # Ver qué archivos cambiaste
 git add .               # Agregar todos los cambios (o git add archivo.js)
 git commit -m "Descripción clara de lo que hiciste"
 ```
+> Es importante que escribas buenas descripciones en tus commits. vscode tiene un generador de mensajes.
 
 ### 4. Subir Cambios
 Sube tu rama al servidor ("remote"):
