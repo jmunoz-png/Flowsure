@@ -15,10 +15,18 @@
 </head>
 
 <body>
-  <div id="loader"
-    style="position: fixed; inset: 0; background: #0b1020; display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 9999; color: white;">
-    <div class="spinner"></div>
-    <p style="margin-top: 20px;">Cargando experiencia…</p>
+  <div id="loader">
+    <!-- <div class="spinner"></div>
+    <p>Cargando experiencia…</p> -->
+    <div class="loader-box">
+      <div class="intro-icon-wrapper">
+        <img src="./assets/intro-icon.gif" alt="Icono Flowsure" class="intro-icon" />
+      </div>
+      <div class="progress-track">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <p id="progressText">0%</p>
+    </div>
   </div>
   <nav class="navbar navbar-expand-xl">
     <div class="container-fluid">
@@ -105,8 +113,8 @@
               leen datos, pero no los comprenden ni los conectan.</p>
           </div>
           <div class="col-md-6">
-            <p class="info-right">Nuestra IA entiende el contexto detrás de cada imagen, video, documento y dato,
-              para ayudarte a tomar decisiones más seguras y rápidas.</p>
+            <p class="info-right">Nuestra IA entiende el contexto detrás de cada imagen, video, documento y dato, para
+              ayudarte a tomar decisiones más seguras y rápidas.</p>
           </div>
         </div>
       </div>
@@ -126,8 +134,8 @@
           </div>
           <div class="col-md-6">
             <p class="info-right">Flowsure no solo observa y entiende: te ayuda a decidir con precisión, en menos tiempo
-              y con mayor confianza. Decidir bien es decidir con respaldo y ese respaldo hoy es inteligencia
-              diseñada para ti.</p>
+              y con mayor confianza. Decidir bien es decidir con respaldo y ese respaldo hoy es inteligencia diseñada
+              para ti.</p>
           </div>
         </div>
       </div>
@@ -336,19 +344,6 @@
     crossorigin="anonymous"></script>
   <!-- Script principal -->
   <script src="js/main.js"></script>
-  <script>
-    // Fallback: If the page doesn't load in 1.5 seconds, force remove the loader
-    setTimeout(() => {
-      const loader = document.getElementById('loader');
-      if (loader) {
-        console.warn("⚠️ Inline fallback removing loader");
-        loader.style.transition = "opacity 0.5s ease";
-        loader.style.opacity = "0";
-        setTimeout(() => loader.remove(), 500);
-        document.body.style.overflow = "auto";
-      }
-    }, 1500);
-  </script>
 </body>
 
 </html>
