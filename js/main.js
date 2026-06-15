@@ -382,19 +382,21 @@ document.addEventListener("DOMContentLoaded", () => {
   //! Animacion Imagenes
   const imagesWrapper = document.querySelectorAll(".image-wrapper");
   const imagesText = document.querySelector(".images-text");
+  const imagesScrollDistance = () => window.innerHeight * 1.8;
 
   ScrollTrigger.create({
     id: "images-trigger",
     trigger: ".images",
     start: "top top",
-    end: `+${window.innerHeight * 4}px`,
+    end: () => `+=${imagesScrollDistance()}`,
     pin: true,
     pinSpacing: true,
-    scrub: 1,
+    scrub: 0.45,
+    invalidateOnRefresh: true,
     onUpdate: (self) => {
       const progress = self.progress;
-      const start = 0.05;
-      const end = 0.55;
+      const start = 0.03;
+      const end = 0.36;
 
       imagesWrapper.forEach((img) => {
         const fx = parseFloat(getComputedStyle(img).getPropertyValue("--fx")) || 0;
@@ -421,7 +423,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       // Text fade in-out
-      if (progress >= 0.5) {
+      if (progress >= 0.32) {
         imagesText.style.opacity = "1";
         imagesText.style.transform = "translateY(0)";
         imagesText.classList.add("visible");
@@ -439,13 +441,14 @@ document.addEventListener("DOMContentLoaded", () => {
   ScrollTrigger.create({
     trigger: ".images",
     start: "top 8%",
-    end: `+${window.innerHeight * 4}px`,
+    end: () => `+=${imagesScrollDistance()}`,
     toggleActions: "play none none reverse",
     scrub: true,
+    invalidateOnRefresh: true,
     onUpdate: (self) => {
       const p = self.progress;
 
-      if (p < 0.15) {
+      if (p < 0.08) {
         gsap.to(preAnimTitle, {
           opacity: 1,
           y: 0,
@@ -454,7 +457,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       }
 
-      if (p >= 0.15 && p <= 0.35) {
+      if (p >= 0.08 && p <= 0.22) {
         gsap.to(preAnimTitle, {
           opacity: 0,
           y: -30,
@@ -518,7 +521,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
       gsap.to(trig, {
         progress: 1,
-        duration: 2.5,
+        duration: 1.2,
         ease: "power2.inOut",
         onUpdate: () => trig.update()
       });
