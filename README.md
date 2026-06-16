@@ -8,7 +8,6 @@ El flujo ideal ("Buenas Prácticas") es **Gitflow simplificado**:
 2.  **`develop`**: Rama de integración (donde se juntan los cambios de todos).
 3.  **`feature/...`**: Ramas de trabajo temporal para cada tarea nueva.
 
-
 ---
 
 ## Instrucciones Paso a Paso
